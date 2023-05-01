@@ -28,20 +28,18 @@ export default function Calculator() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>React Native Calculator</Text>
+      <Text style={styles.title}>Calculator</Text>
       <TextInput
         style={styles.input}
         keyboardType="numeric"
         value={num1}
         onChangeText={setNum1}
-        placeholder="Enter first number"
       />
       <TextInput
         style={styles.input}
         keyboardType="numeric"
         value={num2}
         onChangeText={setNum2}
-        placeholder="Enter second number"
       />
       <View style={styles.buttons}>
         <Button title="+" onPress={add} />
@@ -69,7 +67,7 @@ const styles = StyleSheet.create({
     height: 40,
     width: '80%',
     borderWidth: 1,
-    borderColor: '#ccc',
+    borderColor: 'purple',
     padding: 10,
     marginVertical: 10,
   },
@@ -81,6 +79,6 @@ const styles = StyleSheet.create({
   },
   result: {
     fontSize: 20,
-    fontWeight: 'bold',
+    fontWeight: 'normal',
   },
 });
